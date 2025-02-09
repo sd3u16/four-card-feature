@@ -12,34 +12,176 @@
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+
+
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    
+    *, **::after, *::before{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body{
+      font-family: "Poppins", serif;
+      color: #4D4F62;
+      min-height: 100vh;
+      display: flex;
+      
+      align-items: center;
+      flex-flow: column nowrap;
+      background-color: #FAFAFA;
+      padding: 1rem;
+      gap: 5rem;
+    }
+
+    .first-header{
+      text-align: center;
+    }
+
+    .title_ai{
+      font-weight: lighter;
+      letter-spacing: 0.17px;
+    }
+
+    .ai-context{
+      letter-spacing: 0.1px;
+      line-height: 25px;
+      opacity: 50%;
+    }
+
+
+    .first-block, .second-block, .third-block, .fourth-block{
+      color: #4D4F62;
+      border-radius: 10px;
+      box-shadow: 1px 0 20px #4D4F62;
+      padding: 3rem;
+      display: flex;
+      flex-flow: column nowrap;
+      gap: 0.3rem;
+      padding-top: 1.2rem;
+      padding-bottom: 1.2rem;
+      padding-right: 2.2rem;
+      padding-left: 2.2rem;
+      max-width: 500px;
+      height: 260px;
+      justify-content: space-around;
+      
+    }
+
+    .first-block{
+      border-top: 4px solid #00C8C8;
+    }
+
+    .second-block{
+      border-top: 4px solid #FF637B;
+    }
+
+    .third-block{
+      border-top: 4px solid #FF9100;
+    }
+
+    .fourth-block{
+      border-top:4px solid #377FD2;
+    }
+
+    .block_img{
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 2.5rem;
+      align-content: flex-end;
+    }
+
+    h2, h3, p{
+      margin: 0;
+    }
+
+    .main_content{
+      display: flex;
+      flex-flow: column nowrap;
+      gap: 1.5rem;
+    }
+
+    .first-header{
+      display: flex;
+      flex-flow: column nowrap;
+      gap: 0.1rem;
+    }
+
+    .inner{
+      display: flex;
+      flex-flow: column nowrap;
+      gap: 1.2rem;
+    }
+
+    @media screen and (min-width: 1024px) {
+      .main_content{
+        flex-flow: row nowrap;
+        
+      }
+
+      .inner{
+        display: flex;
+        flex-flow: column nowrap;
+        gap: 1.8rem;
+      }
+
+      .first-block, .fourth-block{
+        align-self: center;
+      }
+
+      .first-block, .second-block, .third-block, .fourth-block{
+        max-width: 340px;
+        max-height: fit-content;
+      }
+    }
+  
   </style>
 </head>
 <body>
   
-  Reliable, efficient delivery
-  Powered by Technology
+  <div class="first-header">
+    <h2 class="title_ai">Reliable, efficient delivery</h2>
+    <h2 class="bold_title_ai">Powered by Technology</h2>
+    <p class="ai-context">
+      Our Artificial Intelligence powered tools use millions of project data points
+      to ensure that your project is successful
+    </p>
+  </div>
 
-  Our Artificial Intelligence powered tools use millions of project data points 
-  to ensure that your project is successful
 
-  Supervisor
-  Monitors activity to identify project roadblocks
+  <div class="main_content">
 
-  Team Builder
-  Scans our talent network to create the optimal team for your project
+    <div class="first-block">
+      <h3 class="para-header">Supervisor</h3>
+      <p class="para-block">Monitors activity to identify project roadblocks</p>
+      <div class="block_img"><img src="./images/icon-supervisor.svg" alt=""></div>
+    </div>
 
-  Karma
-  Regularly evaluates our talent to ensure quality
+    <div class="inner">
+      <div class="second-block">
+        <h3 class="para-header">Team Builder</h3>
+        <p class="para-block">Scans our talent network to create the optimal team for your project</p>
+        <div class="block_img"><img src="./images/icon-team-builder.svg" alt=""></div>
+      </div>
+      <div class="third-block">
+        <h3 class="para-header">Karma</h3>
+        <p class="para-block">Regularly evaluates our talent to ensure quality</p>
+        <div class="block_img"><img src="./images/icon-karma.svg" alt=""></div>
+      </div>
+    </div>
 
-  Calculator
-  Uses data from past projects to provide better delivery estimates
+    <div class="fourth-block">
+      <h3 class="para-header">Calculator</h3>
+      <p class="para-block">Uses data from past projects to provide better delivery estimates</p>
+      <div class="block_img"><img src="./images/icon-calculator.svg" alt=""></div>
+    </div>
+
+  </div>
 
   
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
+
+  
+  
 </body>
 </html>
